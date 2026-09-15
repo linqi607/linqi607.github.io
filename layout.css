@@ -1,0 +1,121 @@
+/* Final spacing pass: keep every desktop page comfortably inside the viewport. */
+:root {
+  --page-width: 1180px;
+  --page-inset: clamp(48px, 12vw, 220px);
+}
+
+header,
+footer,
+.home,
+.category-page,
+.video-page,
+.video-detail {
+  width: min(calc(100% - var(--page-inset)), var(--page-width));
+  max-width: var(--page-width);
+  padding-left: 0;
+  padding-right: 0;
+}
+
+header { min-height: 108px; padding-top: 30px; padding-bottom: 30px; }
+footer { padding-top: 26px; padding-bottom: 26px; }
+
+.home {
+  margin-top: 18px;
+  grid-template-columns: minmax(250px, 320px) minmax(0, 1fr);
+  gap: clamp(50px, 7vw, 92px);
+}
+.home .profile.profile-plain { max-width: 300px; }
+.work-grid { gap: 42px 34px; }
+.work-card { aspect-ratio: 3.45 / 1; }
+.work-card h2 { font-size: clamp(21px, 1.65vw, 26px); }
+
+.category-page,
+.video-page,
+.video-detail { padding-top: 52px; padding-bottom: 92px; }
+
+/* These pages now begin directly with their work, without oversized page labels. */
+.writing-page,
+.projects-page { padding-top: 64px; }
+
+.writing-list { gap: 26px; }
+.writing-item {
+  min-height: 142px;
+  padding: 30px 34px;
+  align-items: center;
+  border-radius: 24px;
+}
+.writing-item h2 {
+  max-width: 880px;
+  font-size: clamp(20px, 1.65vw, 26px);
+  line-height: 1.5;
+}
+.writing-item > a { margin-top: 0; font-size: 13px; }
+
+.project-case { padding: 42px; border-radius: 28px; }
+.project-case-heading {
+  grid-template-columns: minmax(0, 1.12fr) minmax(290px, .88fr);
+  gap: 50px;
+}
+.project-case-heading h2 { font-size: clamp(28px, 3vw, 42px); line-height: 1.32; }
+.project-case-intro p { font-size: 14px; line-height: 1.85; }
+.project-topics { margin: 34px 0 38px; padding-top: 24px; }
+.project-deliverables { gap: 24px; }
+.project-deliverable { min-height: 290px; padding: 26px; }
+.project-deliverable-copy { margin: 32px 0 28px; }
+.project-deliverable h3 { font-size: clamp(21px, 1.9vw, 27px); }
+.project-deliverable p,
+.project-deliverable strong { font-size: 14px; }
+
+.visual-heading { margin: 34px 0 44px; }
+.visual-heading h1 { font-size: clamp(36px, 4vw, 54px); }
+.visual-heading p { max-width: 440px; font-size: 14px; }
+.photography-grid { columns: 3 300px; column-gap: 22px; }
+.photography-grid figure { margin-bottom: 22px; }
+
+.video-gallery { gap: 48px 30px; }
+.detail-hero h1 { font-size: clamp(30px, 3.5vw, 48px); }
+.case-hero h1 { font-size: clamp(34px, 4vw, 52px); }
+.detail-player video { min-height: 46vh; max-height: 72vh; }
+
+.cv-page {
+  width: min(calc(100% - var(--page-inset)), 980px);
+  max-width: 980px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 30px;
+}
+.cv-toolbar { justify-content: flex-start; margin-bottom: 24px; }
+.cv-document { padding: 46px 52px 54px; }
+.cv-bottom { justify-content: flex-start; }
+
+@media (max-width: 900px) {
+  :root { --page-inset: clamp(44px, 9vw, 88px); }
+  .home { grid-template-columns: 1fr; gap: 44px; height: auto; max-height: none; }
+  .home .profile.profile-plain { max-width: 300px; }
+  .project-case-heading { grid-template-columns: 1fr; gap: 28px; }
+  .project-deliverables { grid-template-columns: 1fr; }
+  .project-deliverable { min-height: 260px; }
+}
+
+@media (max-width: 620px) {
+  :root { --page-inset: 40px; }
+  header { width: calc(100% - 32px); padding-top: 22px; padding-bottom: 22px; }
+  footer,
+  .home,
+  .category-page,
+  .video-page,
+  .video-detail,
+  .cv-page { width: calc(100% - 40px); }
+  .category-page,
+  .video-page,
+  .video-detail { padding-top: 34px; padding-bottom: 60px; }
+  .writing-page,
+  .projects-page { padding-top: 40px; }
+  .writing-item { min-height: 168px; padding: 26px 24px; align-items: flex-start; }
+  .writing-item h2 { font-size: 21px; }
+  .writing-item > a { align-self: flex-end; }
+  .project-case { padding: 24px; }
+  .project-case-heading h2 { font-size: 29px; }
+  .visual-heading h1 { font-size: 38px; }
+  .cv-document { padding: 26px 22px; }
+}

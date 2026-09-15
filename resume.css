@@ -1,0 +1,43 @@
+/* Resume reading layout follows the supplied PDF's hierarchy. */
+.cv-page { max-width: 1120px; margin: 12px auto 50px; padding: 0 32px; }
+.cv-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 28px; }
+.cv-document { background: #fdfdfb; color: #303332; padding: 52px 58px 58px; border-radius: 18px; box-shadow: 0 12px 36px #555b5512; }
+.cv-heading { position: relative; min-height: 145px; padding: 8px 108px 30px 0; display: flex; align-items: flex-start; }
+.cv-identity { flex: 1; text-align: center; }
+.cv-identity h1 { font-size: 32px; font-weight: 650; margin: 2px 0 20px; letter-spacing: .05em; }
+.cv-contact { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px 18px; font-size: 14px; line-height: 1.7; }
+.cv-identity p { margin: 9px 0 0; font-size: 14px; color: #59605c; }
+.cv-photo { position: absolute; right: 0; top: 0; width: 87px; height: 110px; object-fit: contain; }
+.cv-section { margin-top: 30px; scroll-margin-top: 24px; }
+.cv-section h2 { margin: 0 0 18px; padding-bottom: 10px; border-bottom: 1px solid #878f88; font-size: 20px; font-weight: 650; }
+.cv-entry { margin-top: 23px; }
+.cv-entry-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 12px 26px; }
+.cv-entry-heading h3 { margin: 0; font-size: 16px; line-height: 1.65; font-weight: 650; }
+.cv-entry-heading>span { font-size: 14px; line-height: 1.7; white-space: nowrap; color: #616962; flex-shrink: 0; font-variant-numeric: tabular-nums; }
+.cv-section ul { padding-left: 21px; margin: 12px 0 0; }
+.cv-section li { font-size: 16px; line-height: 1.9; padding-left: 4px; margin: 8px 0; overflow-wrap: anywhere; }
+.cv-section li::marker { color: #727b74; font-size: .8em; }
+.cv-section strong { font-weight: 600; }
+.cv-portfolio { display: inline-block; font-size: 16px; line-height: 1.8; border-bottom: 1px solid #a4ada5; }
+.cv-bottom { display: flex; justify-content: flex-end; padding-top: 26px; }
+@media(max-width:900px) { .cv-document { padding: 36px; }.cv-entry-heading { flex-wrap: wrap; gap: 5px 20px; } }
+@media(max-width:540px) {
+  .cv-page { padding: 0 16px; margin-top: 8px; }
+  .cv-document { padding: 26px 22px; border-radius: 15px; }
+  .cv-heading { min-height: 120px; padding: 0 76px 10px 0; }
+  .cv-identity { text-align: left; }
+  .cv-identity h1 { font-size: 28px; margin: 0 0 16px; }
+  .cv-contact { display: grid; justify-content: start; font-size: 13px; gap: 5px; overflow-wrap: anywhere; }
+  .cv-photo { width: 62px; height: 82px; }
+  .cv-section { margin-top: 28px; }
+  .cv-section h2 { font-size: 19px; }
+  .cv-section li { line-height: 1.85; padding-left: 0; }
+  .cv-toolbar { margin-bottom: 22px; }
+}
+@media print {
+  header, footer, .cv-toolbar, .cv-bottom { display: none; }
+  .cv-page { margin: 0; padding: 0; max-width: none; }
+  .cv-document { background: white; box-shadow: none; padding: 0; }
+  .cv-entry-heading, .cv-section h2 { break-after: avoid; }
+  .cv-section li { break-inside: avoid; }
+}
