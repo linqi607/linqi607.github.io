@@ -119,6 +119,14 @@ export const categories = [
           {src:'/assets/case-studies/chongqing/ai-residential-valley.jpg', caption:'山谷住宅与城市绿地'},
           {src:'/assets/case-studies/chongqing/ai-jiefangbei-street.jpg', caption:'解放碑商圈街景'},
           {src:'/assets/case-studies/chongqing/ai-river-confluence.jpg', caption:'两江交汇城市全景'}
+        ],
+        demoVideos:[
+          {src:'https://github.com/linqi607/linqi607.github.io/releases/download/media-v1/chongqing-previz-opening.mp4?v=20260915', title:'开场简模预演'},
+          {src:'https://github.com/linqi607/linqi607.github.io/releases/download/media-v1/chongqing-final-opening.mp4?v=20260915', title:'开场成片对比'},
+          {src:'https://github.com/linqi607/linqi607.github.io/releases/download/media-v1/chongqing-liziba-demo.mp4?v=20260915', title:'李子坝镜头测试'},
+          {src:'https://github.com/linqi607/linqi607.github.io/releases/download/media-v1/chongqing-bridge-demo.mp4?v=20260915', title:'桥梁镜头测试'},
+          {src:'https://github.com/linqi607/linqi607.github.io/releases/download/media-v1/chongqing-water-vapor.mp4?v=20260915', title:'水汽效果测试'},
+          {src:'https://github.com/linqi607/linqi607.github.io/releases/download/media-v1/chongqing-english-version.mp4?v=20260915', title:'英文版成片'}
         ]
       }
     },
