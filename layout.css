@@ -42,8 +42,9 @@ footer { padding-top: 26px; padding-bottom: 26px; }
  * density, while keeping the current high-DPI laptop proportions unchanged.
  */
 @media (min-width: 1500px) and (max-resolution: 1.25dppx) {
-  :root { --page-width: 1500px; }
   .home {
+    width: min(calc(100% - var(--page-inset)), 1500px);
+    max-width: 1500px;
     grid-template-columns: clamp(310px, 18vw, 420px) clamp(420px, 25vw, 570px);
     gap: clamp(110px, 8vw, 220px);
   }
