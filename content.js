@@ -17,7 +17,7 @@ export const profile = {
 export const categories = [
   {id:'video', title:'视频作品', en:'MOTION & FILM', subtitle:'商业短片 · AI视频 · 创意实验', description:'用镜头组织叙事，让想象成为画面。', items:[
     {
-      id:'apple-sausage', title:'如果苹果做烤肠', group:'aigc', src:'https://github.com/linqi607/linqi607.github.io/releases/download/media-v1/apple-sausage.mp4',
+      id:'apple-sausage', title:'如果苹果做烤肠', group:'aigc', src:'https://github.com/linqi607/linqi607.github.io/releases/download/media-v1/apple-sausage.mp4?v=20260915',
       poster:'/assets/video-covers/apple-sausage.png', duration:'00:23', format:'横屏', caseStudy:'production',
       production:{
         sections:[
@@ -150,7 +150,7 @@ export const categories = [
       ]
     }
   ]},
-  {id:'visual', title:'图片作品', en:'STILLS & IMAGINATION', subtitle:'个人摄影作品', description:'以上拍摄设备：索尼A7M3、佳能200DII、尼康D7100。', items:[
+  {id:'visual', title:'图片作品', en:'STILLS & IMAGINATION', subtitle:'个人摄影作品', description:'拍摄设备：索尼A7M3、佳能200DII、尼康D7100', items:[
     {src:'/assets/photography/01-sailboat-snow-lake.png',caption:'湖上帆影与雪山'},
     {src:'/assets/photography/02-snow-mountain-reflection.png',caption:'雪峰与湖面倒影'},
     {src:'/assets/photography/03-sunlit-snow-peaks.png',caption:'云下雪峰'},

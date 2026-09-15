@@ -21,11 +21,18 @@ footer { padding-top: 26px; padding-bottom: 26px; }
 
 .home {
   margin-top: 18px;
-  grid-template-columns: minmax(250px, 320px) minmax(0, 1fr);
-  gap: clamp(50px, 7vw, 92px);
+  grid-template-columns: 300px minmax(340px, 420px);
+  justify-content: center;
+  gap: clamp(80px, 9vw, 130px);
 }
 .home .profile.profile-plain { max-width: 300px; }
-.work-grid { gap: 42px 34px; }
+.work-grid {
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  align-content: center;
+  gap: 30px;
+}
 .work-card { aspect-ratio: 3.45 / 1; }
 .work-card h2 { font-size: clamp(21px, 1.65vw, 26px); }
 
@@ -35,7 +42,10 @@ footer { padding-top: 26px; padding-bottom: 26px; }
 
 /* These pages now begin directly with their work, without oversized page labels. */
 .writing-page,
-.projects-page { padding-top: 64px; }
+.projects-page { padding-top: 52px; }
+
+.writing-page > .back,
+.projects-page > .back { display: inline-block; margin-bottom: 38px; }
 
 .writing-list { gap: 26px; }
 .writing-item {
@@ -66,9 +76,14 @@ footer { padding-top: 26px; padding-bottom: 26px; }
 .project-deliverable p,
 .project-deliverable strong { font-size: 14px; }
 
-.visual-heading { margin: 34px 0 44px; }
-.visual-heading h1 { font-size: clamp(36px, 4vw, 54px); }
-.visual-heading p { max-width: 440px; font-size: 14px; }
+.visual-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 36px;
+  margin: 0 0 44px;
+}
+.visual-toolbar p { margin: 0; color: #666e69; font-size: 14px; line-height: 1.8; text-align: right; }
 .photography-grid { columns: 3 300px; column-gap: 22px; }
 .photography-grid figure { margin-bottom: 22px; }
 
@@ -92,6 +107,7 @@ footer { padding-top: 26px; padding-bottom: 26px; }
   :root { --page-inset: clamp(44px, 9vw, 88px); }
   .home { grid-template-columns: 1fr; gap: 44px; height: auto; max-height: none; }
   .home .profile.profile-plain { max-width: 300px; }
+  .work-grid { max-width: 520px; }
   .project-case-heading { grid-template-columns: 1fr; gap: 28px; }
   .project-deliverables { grid-template-columns: 1fr; }
   .project-deliverable { min-height: 260px; }
@@ -116,6 +132,7 @@ footer { padding-top: 26px; padding-bottom: 26px; }
   .writing-item > a { align-self: flex-end; }
   .project-case { padding: 24px; }
   .project-case-heading h2 { font-size: 29px; }
-  .visual-heading h1 { font-size: 38px; }
+  .visual-toolbar { align-items: flex-start; flex-direction: column; gap: 18px; margin-bottom: 34px; }
+  .visual-toolbar p { text-align: left; }
   .cv-document { padding: 26px 22px; }
 }
