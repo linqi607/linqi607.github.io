@@ -36,6 +36,25 @@ footer { padding-top: 26px; padding-bottom: 26px; }
 .work-card { aspect-ratio: 3.45 / 1; }
 .work-card h2 { font-size: clamp(21px, 1.65vw, 26px); }
 
+/*
+ * A large desktop running at 100% display scale otherwise renders the fixed
+ * laptop-sized home composition too small. Grow only the homepage at that
+ * density, while keeping the current high-DPI laptop proportions unchanged.
+ */
+@media (min-width: 1500px) and (max-resolution: 1.25dppx) {
+  :root { --page-width: 1500px; }
+  .home {
+    grid-template-columns: clamp(310px, 18vw, 420px) clamp(420px, 25vw, 570px);
+    gap: clamp(110px, 8vw, 220px);
+  }
+  .home .profile.profile-plain { max-width: none; }
+  .work-grid { gap: clamp(24px, 1.7vw, 34px); }
+  .work-card h2 { font-size: clamp(24px, 1.55vw, 31px); }
+  .home .profile-plain .identity p { font-size: 15px; }
+  .home .profile-plain .details { font-size: 14px; }
+  .home .profile-plain .resume-link { font-size: 14px; }
+}
+
 .category-page,
 .video-page,
 .video-detail { padding-top: 52px; padding-bottom: 92px; }
