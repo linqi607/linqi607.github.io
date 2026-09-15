@@ -21,17 +21,17 @@ footer { padding-top: 26px; padding-bottom: 26px; }
 
 .home {
   margin-top: 18px;
-  grid-template-columns: 300px minmax(340px, 420px);
+  grid-template-columns: 250px 340px;
   justify-content: center;
-  gap: clamp(80px, 9vw, 130px);
+  gap: clamp(84px, 10vw, 140px);
 }
-.home .profile.profile-plain { max-width: 300px; }
+.home .profile.profile-plain { max-width: 250px; }
 .work-grid {
   width: 100%;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, auto);
   align-content: center;
-  gap: 30px;
+  gap: 24px;
 }
 .work-card { aspect-ratio: 3.45 / 1; }
 .work-card h2 { font-size: clamp(21px, 1.65vw, 26px); }
@@ -106,8 +106,8 @@ footer { padding-top: 26px; padding-bottom: 26px; }
 @media (max-width: 900px) {
   :root { --page-inset: clamp(44px, 9vw, 88px); }
   .home { grid-template-columns: 1fr; gap: 44px; height: auto; max-height: none; }
-  .home .profile.profile-plain { max-width: 300px; }
-  .work-grid { max-width: 520px; }
+  .home .profile.profile-plain { max-width: 250px; }
+  .work-grid { max-width: 340px; }
   .project-case-heading { grid-template-columns: 1fr; gap: 28px; }
   .project-deliverables { grid-template-columns: 1fr; }
   .project-deliverable { min-height: 260px; }
