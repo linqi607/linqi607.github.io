@@ -69,6 +69,25 @@ if(profileCarousel){
   dots.forEach((dot,index)=>dot.addEventListener('click',()=>showProfilePhoto(index)));
 }
 document.querySelectorAll('.video-preview:not([poster])').forEach(video=>video.addEventListener('loadedmetadata',()=>{video.currentTime=Math.min(.3,video.duration/10);},{once:true}));
+const detailVideos=[...document.querySelectorAll('.detail-player video')];
+if(detailVideos.length){
+  const fitDetailVideos=()=>{
+    const maxHeightRatio=window.matchMedia('(max-width: 620px)').matches ? .7 : .72;
+    detailVideos.forEach(video=>{
+      if(!video.videoWidth||!video.videoHeight)return;
+      const availableWidth=video.parentElement.clientWidth;
+      const aspectRatio=video.videoWidth/video.videoHeight;
+      const height=Math.min(window.innerHeight*maxHeightRatio,availableWidth/aspectRatio);
+      video.style.width=`${height*aspectRatio}px`;
+      video.style.height=`${height}px`;
+    });
+  };
+  detailVideos.forEach(video=>{
+    if(video.readyState>=1)fitDetailVideos();
+    else video.addEventListener('loadedmetadata',fitDetailVideos,{once:true});
+  });
+  window.addEventListener('resize',fitDetailVideos,{passive:true});
+}
 const imageLightbox=document.querySelector('.image-lightbox');
 if(imageLightbox){
   const lightboxImage=imageLightbox.querySelector('img');
