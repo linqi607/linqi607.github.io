@@ -130,6 +130,18 @@ export const categories = [
         ]
       }
     },
+    {
+      id:'cockroach-paradise', title:'蟑螂乐园', group:'aigc',
+      src:'https://github.com/linqi607/linqi607.github.io/releases/download/media-v1/cockroach-paradise.mp4?v=20260917',
+      poster:'/assets/video-covers/cockroach-paradise.png', duration:'01:01', format:'横屏',
+      detail:{
+        note:'我制作了一款桌面互动小游戏，并用这支趣味视频呈现它的玩法与视觉效果。在线版需要 VPN；也可以下载离线压缩包，解压后双击 HTML 文件，无需安装即可玩耍。',
+        links:[
+          {label:'在线体验（需 VPN）',url:'https://cockroach-paradise.apt-chord-3397.chatgpt.site/'},
+          {label:'下载离线版（ZIP）',url:'https://github.com/linqi607/linqi607.github.io/releases/download/media-v1/cockroach-paradise-offline.zip',download:true}
+        ]
+      }
+    },
     {id:'doll-transformation', title:'电子娃娃换装', group:'aigc', src:'https://github.com/linqi607/linqi607.github.io/releases/download/media-v1/doll-transformation.mp4', poster:'/assets/video-covers/doll-transformation.png', duration:'00:16', format:'竖屏', detail:{tools:[{label:'生图',value:'GPT Image 2'},{label:'视频',value:'MiniMax H3'}], note:'积分不够，生成的最低画质，所以远景的人脸有点崩，且每个视频只抽了一两次卡，完成度不算特别高，如果我有更多积分就好了!'}},
     {id:'ai-director-shots', title:'用AI复刻了迈克尔贝镜头+杜琪峰站位', group:'aigc', src:'https://github.com/linqi607/linqi607.github.io/releases/download/media-v1/ai-director-shots.mp4', poster:'/assets/video-covers/ai-director-shots.png', duration:'01:57', format:'横屏', hideDefaultInfo:true},
     {id:'codex-color-flow', title:'用codex做的色彩流动工具', group:'aigc', src:'https://github.com/linqi607/linqi607.github.io/releases/download/media-v1/codex-color-flow.mp4', poster:'/assets/video-covers/codex-color-flow.png', duration:'00:32', format:'竖屏', detail:{note:'部署到Github了，可直接打开玩耍（得有vpn）：',link:{label:'https://linqi607.github.io/color-awakening/?v=3',url:'https://linqi607.github.io/color-awakening/?v=3'}}},
