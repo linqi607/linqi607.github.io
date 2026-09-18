@@ -152,14 +152,13 @@ export const categories = [
       src:'https://github.com/linqi607/linqi607.github.io/releases/download/media-v1/workday.mp4',
       poster:'/assets/video-covers/workday.png', duration:'05:16', format:'横屏', caseStudy:'series',
       detail:{
-        note:'除拍摄外，该系列由我负责选题、采访和后期制作；拍摄时我正在进行采访。',
+        note:'该系列由我负责选题、采访和后期制作；除了拍摄（拍摄时我正在进行采访）',
         link:{label:'在小红书查看代表作',url:'https://www.xiaohongshu.com/explore/658e96cf00000000120073e9?xsec_token=ABWo0WVHRUW7h31FRro7bKSIHi5BCyGJd7gt8ySmf1Wrw=&xsec_source=pc_search'},
-        metrics:[{label:'发布平台',value:'小红书'},{label:'点赞',value:'5936'},{label:'收藏',value:'1157'},{label:'评论',value:'343'}],
         episodes:[
           {title:'工作日为什么不上班',src:'https://github.com/linqi607/linqi607.github.io/releases/download/media-v1/workday.mp4',poster:'/assets/video-covers/workday-episode.png'},
-          {title:'抓马生活编辑部 · 02',src:'https://github.com/linqi607/linqi607.github.io/releases/download/media-v1/drama-editorial-02.mp4?v=20260918'},
-          {title:'抓马生活编辑部 · 03',src:'https://github.com/linqi607/linqi607.github.io/releases/download/media-v1/drama-editorial-03.mp4?v=20260918'},
-          {title:'抓马生活编辑部 · 04',src:'https://github.com/linqi607/linqi607.github.io/releases/download/media-v1/drama-editorial-04.mp4?v=20260918'}
+          {title:'你有哪些特殊的吵架技巧',src:'https://github.com/linqi607/linqi607.github.io/releases/download/media-v1/drama-editorial-02.mp4?v=20260918'},
+          {title:'上学VS上班，哪个更快乐',src:'https://github.com/linqi607/linqi607.github.io/releases/download/media-v1/drama-editorial-03.mp4?v=20260918'},
+          {title:'说方言会影响颜值吗',src:'https://github.com/linqi607/linqi607.github.io/releases/download/media-v1/drama-editorial-04.mp4?v=20260918'}
         ]
       }
     },
