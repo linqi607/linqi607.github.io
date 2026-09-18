@@ -147,7 +147,22 @@ export const categories = [
     {id:'codex-color-flow', title:'用codex做的色彩流动工具', group:'aigc', src:'https://github.com/linqi607/linqi607.github.io/releases/download/media-v1/codex-color-flow.mp4', poster:'/assets/video-covers/codex-color-flow.png', duration:'00:32', format:'竖屏', detail:{note:'部署到Github了，可直接打开玩耍（得有vpn）：',link:{label:'https://linqi607.github.io/color-awakening/?v=3',url:'https://linqi607.github.io/color-awakening/?v=3'}}},
     {id:'chen-xiaonan-ip', title:'【高管IP】陈晓楠个人IP内容', group:'other', poster:'/assets/video-covers/chen-xiaonan-ip.png', caseStudy:'executive-ip', caseImage:'/assets/case-studies/xiaonan-talk-overview.png'},
     {id:'yangning', title:'【人物访谈】网红教师杨宁', group:'other', src:'https://github.com/linqi607/linqi607.github.io/releases/download/media-v1/yangning.mp4', poster:'/assets/video-covers/yangning.png', duration:'09:48', format:'横屏', detail:{note:'团队作品，我负责整体的内容策划与运营，包括资料搜集、采访提纲、现场统筹、监督制作、部分剪辑、后期上线运营和传播。',link:{label:'在 bilibili 查看原视频',url:'https://www.bilibili.com/video/BV1eS4y1U7Za/?spm_id_from=333.337.search-card.all.click&vd_source=870a28d38612ec6856a3501bea7500bd'},metrics:[{label:'发布平台',value:'bilibili'},{label:'播放',value:'10.9W'},{label:'点赞',value:'7129'},{label:'投币',value:'2349'},{label:'收藏',value:'2472'},{label:'分享',value:'881'},{label:'弹幕',value:'696'}]}},
-    {id:'workday', title:'【综艺街采】工作日为什么不上班', group:'other', src:'https://github.com/linqi607/linqi607.github.io/releases/download/media-v1/workday.mp4', poster:'/assets/video-covers/workday.png', duration:'05:16', format:'横屏', detail:{note:'除拍摄外，该视频由我一人独立完成，包括选题、采访和后期制作；拍摄时我正在进行采访。',link:{label:'在小红书查看原视频',url:'https://www.xiaohongshu.com/explore/658e96cf00000000120073e9?xsec_token=ABWo0WVHRUW7h31FRro7bKSIHi5BCyGJd7gt8ySmf1Wrw=&xsec_source=pc_search'},metrics:[{label:'发布平台',value:'小红书'},{label:'点赞',value:'5936'},{label:'收藏',value:'1157'},{label:'评论',value:'343'}]}},
+    {
+      id:'workday', title:'【综艺街采】抓马生活编辑部', group:'other',
+      src:'https://github.com/linqi607/linqi607.github.io/releases/download/media-v1/workday.mp4',
+      poster:'/assets/video-covers/workday.png', duration:'05:16', format:'横屏', caseStudy:'series',
+      detail:{
+        note:'除拍摄外，该系列由我负责选题、采访和后期制作；拍摄时我正在进行采访。',
+        link:{label:'在小红书查看代表作',url:'https://www.xiaohongshu.com/explore/658e96cf00000000120073e9?xsec_token=ABWo0WVHRUW7h31FRro7bKSIHi5BCyGJd7gt8ySmf1Wrw=&xsec_source=pc_search'},
+        metrics:[{label:'发布平台',value:'小红书'},{label:'点赞',value:'5936'},{label:'收藏',value:'1157'},{label:'评论',value:'343'}],
+        episodes:[
+          {title:'工作日为什么不上班',src:'https://github.com/linqi607/linqi607.github.io/releases/download/media-v1/workday.mp4',poster:'/assets/video-covers/workday-episode.png'},
+          {title:'抓马生活编辑部 · 02',src:'https://github.com/linqi607/linqi607.github.io/releases/download/media-v1/drama-editorial-02.mp4?v=20260918'},
+          {title:'抓马生活编辑部 · 03',src:'https://github.com/linqi607/linqi607.github.io/releases/download/media-v1/drama-editorial-03.mp4?v=20260918'},
+          {title:'抓马生活编辑部 · 04',src:'https://github.com/linqi607/linqi607.github.io/releases/download/media-v1/drama-editorial-04.mp4?v=20260918'}
+        ]
+      }
+    },
     {id:'handup-comedy', title:'【影视剪辑】《举起手来》名场面', group:'other', src:'https://github.com/linqi607/linqi607.github.io/releases/download/media-v1/handup-comedy.mp4', poster:'/assets/video-covers/handup-comedy.png', duration:'02:52', format:'横屏', detail:{note:'该视频由我一人独立制作完成；目前播放量全站排行榜最高第79名。',link:{label:'在 bilibili 查看原视频',url:'https://www.bilibili.com/video/BV1Z44y1y7qX/?from=search&seid=3464388701534195799&vd_source=870a28d38612ec6856a3501bea7500bd'},metrics:[{label:'发布平台',value:'bilibili'},{label:'播放',value:'583.5W'},{label:'全站排行',value:'最高第79名'},{label:'点赞',value:'33.7W'},{label:'投币',value:'2.2W'},{label:'收藏',value:'3.4W'},{label:'分享',value:'1.5W'},{label:'弹幕',value:'5549'}]}},
     {id:'personal-vlog', title:'【个人Vlog】关于南疆', group:'other', src:'https://github.com/linqi607/linqi607.github.io/releases/download/media-v1/personal-vlog.mp4', poster:'/assets/video-covers/personal-vlog.jpg', duration:'01:18', format:'竖屏', hideDefaultInfo:true}
   ]},
